@@ -4,10 +4,21 @@ loginButton.addEventListener("click", function() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "admin" && password === "password") {
-        alert("Login successful!");
-        window.location.href = "dashboard.html"; // Redirect to dashboard
-    } else {
-        alert("Invalid username or password.");
-    }
+    fetch("/api/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error("Login failed");
+        }
+    })
 });

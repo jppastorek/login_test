@@ -1,0 +1,25 @@
+{
+  "name": "login_test",
+  "version": "1.0.0",
+  "description": "a testing base for login scripting",
+  "main": "login.js",
+  "scripts": {
+    "test": "dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jppastorek/login_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jppastorek/login_test/issues"
+  },
+  "homepage": "https://github.com/jppastorek/login_test#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "type": "module"
+}
