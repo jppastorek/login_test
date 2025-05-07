@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#username, #password {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-style: italic;
+}
+
+#username:focus, #password:focus {
+    border-color: #007BFF;
+}
+
+#loginButton {
+    width: 150px;
+    height: 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#loginButton:hover {
+    background-color: #0056b3;
+}
+
+#loginButton:active {
+    background-color: #004085;
+}
